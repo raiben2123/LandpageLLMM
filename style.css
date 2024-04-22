@@ -1,0 +1,287 @@
+@font-face {
+    font-family: pixel;
+    src: url(font/upheavtt.ttf);
+}
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: pixel;
+}
+#divprincipal{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+@media screen and (min-width:320px) {
+    #avatargif{
+        left: 10vw;
+        top: 34vh;
+        width: 25vw;
+        height: 25vh;
+    }
+    #ordenador{
+        left: 35vw;
+        top: 33vh;
+        width: 25vw;
+        height: 30vh;
+    }
+    #chat{
+        top: 20vh;
+        left: 6vw;
+        width: 300px;
+    }
+    #texto{
+        top: 25.5vh;
+        left: 25vw;
+    }
+    #texto2{
+        top: 25.5vh;
+        left: 25vw;
+    }
+    #texto .linea, #texto2 .linea2 {
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 10px;
+        margin-bottom: 1px;
+    }
+    #enlace {
+        width: 34px;
+        height: 52px;
+        top: 40vh;
+        left: 43.5vw;
+    }
+}
+@media screen and (min-width:768px) {
+    #avatargif{
+        left: 25vw;
+        top: 31.5vh;
+        width: 20vw;
+        height: 40vh;
+    }
+    #ordenador{
+        left: 40vw;
+        top: 33vh;
+        width: 25vw;
+        height: 45vh;
+    }
+    #chat{
+        top: 15vh;
+        left: 30vw;
+        width: 300px;
+    }
+    #texto{
+        top: 20vh;
+        left: 36.5vw;
+    }
+    #texto2{
+        top: 20vh;
+        left: 36.5vw;
+    }
+    #texto .linea, #texto2 .linea2 {
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 12px;
+        margin-bottom: 1px;
+    }
+    #enlace {
+        width: 60px;
+        height: 80px;
+        top: 43.3vh;
+        left: 48.5vw;
+    }
+}
+@media screen and (min-width:1024px) {
+    #avatargif{
+        left: 25vw;
+        top: 31.5vh;
+        width: 20vw;
+        height: 40vh;
+    }
+    #ordenador{
+        left: 40vw;
+        top: 33vh;
+        width: 25vw;
+        height: 45vh;
+    }
+    #chat{
+        top: 15vh;
+        left: 30vw;
+        width: 400px;
+    }
+    #texto{
+        top: 23vh;
+        left: 37vw;
+    }
+    #texto2{
+        top: 23vh;
+        left: 37vw;
+    }
+    #texto .linea, #texto2 .linea2 {
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 14px;
+        margin-bottom: 1px;
+    }
+    #enlace {
+        width: 80px;
+        height: 80px;
+        top: 43.3vh;
+        left: 48.5vw;
+    }
+}
+@media screen and (min-width:1440px) {
+    #avatargif{
+        left: 25vw;
+        top: 31.5vh;
+        width: 20vw;
+        height: 40vh;
+    }
+    #ordenador{
+        left: 40vw;
+        top: 33vh;
+        width: 25vw;
+        height: 45vh;
+    }
+    #chat{
+        top: 14vh;
+        left: 30vw;
+    }
+    #texto{
+        top: 22vh;
+        left: 36.3vw;
+    }
+    #texto2{
+        top: 22vh;
+        left: 36.3vw;
+    }
+    #texto .linea, #texto2 .linea2 {
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 13px;
+        margin-bottom: 1px;
+    }
+    #enlace {
+        width: 106px;
+        height: 80px;
+        top: 43.3vh;
+        left: 48.5vw;
+    }
+}
+@media screen and (min-width:1600px) {
+    #avatargif{
+        left: 25vw;
+        top: 31.5vh;
+        width: 20vw;
+        height: 40vh;
+    }
+    #ordenador{
+        left: 40vw;
+        top: 33vh;
+        width: 25vw;
+        height: 45vh;
+    }
+    #chat{
+        top: 15vh;
+        left: 30vw;
+        width: 400px;
+    }
+    #texto{
+        top: 22vh;
+        left: 34vw;
+    }
+    #texto2{
+        top: 22vh;
+        left: 34vw;
+    }
+    #texto .linea, #texto2 .linea2 {
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 15px;
+        margin-bottom: 1px;
+    }
+    #enlace {
+        width: 140px;
+        height: 85px;
+        top: 43.3vh;
+        left: 48.5vw;
+    }
+}
+#avatargif {
+    position:absolute;
+}
+#ordenador {
+    position:absolute;
+}
+#enlace {
+    position: absolute;
+    background-color: black;
+}
+#chat {
+    position:absolute;
+    z-index: 1;
+}
+#texto {
+    position:absolute;
+}
+#texto2 {
+    position: absolute;
+}
+.linea{
+    opacity: 0;
+}
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.linea:nth-child(1) {
+    animation: iniciar 0.1s forwards, escribir 2s steps(30, end) forwards, desvanecer 0.1s 7s forwards;
+}
+.linea:nth-child(2) {
+    animation: iniciar 0.1s 2s forwards, escribir 2s 2s steps(30, end) forwards, desvanecer 0.1s 7s forwards;
+}
+.linea:nth-child(3) {
+    animation: iniciar 0.1s 4s forwards, escribir 2s 4s steps(30, end) forwards, desvanecer 0.1s 7s forwards;
+}
+
+.linea2{
+    opacity: 0;
+}
+
+.linea2:nth-child(1) {
+    animation: iniciar 0.1s 7s forwards, escribir 2s 7s steps(30, end) forwards;
+}
+.linea2:nth-child(2) {
+    animation: iniciar 0.1s 9s forwards, escribir 2s 9s steps(30, end) forwards;
+}
+.linea2:nth-child(3) {
+    animation: iniciar 0.1s 10.8s forwards, escribir 2s 10.8s steps(30, end) forwards;
+}
+
+@keyframes escribir {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes iniciar {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes desvanecer {
+    0% {
+        opacity: 1;
+    }
+    90%, 100% {
+        opacity: 0;
+    }
+}
