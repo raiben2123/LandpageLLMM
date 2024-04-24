@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/stylesobremi.css">
+    <link rel="shortcut icon" href="img/avatar.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <!-- Falta link a javascript -->
+    <title>Landing Page</title>
 </head>
 <body>
-    HOLA
+    <header>
+        <div>Rubén Martínez Marín</div>
+        <nav id="navegador">
+            <ul>
+                <li>Sobre mi</li>
+                <li>Proyectos</li>
+                <li>Skills</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        Rubén Martínez Marín
+    </div>
+    <div>¡Hola! Soy un estudiante de 21 años apasionado por el desarrollo de aplicaciones. Te invito a explorar mi portafolio y 
+        descubrir los proyectos en los que he trabajado. ¡Espero que lo disfrutes!</div>
+    <div><h2>Sobre mi</h2></div>
+    <div>Soy un estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM). Desde que era pequeño, me apasiona la informática y he estado explorando 
+        este fascinante mundo de manera autodidacta. A lo largo de mi trayectoria, he adquirido habilidades en diversas áreas del desarrollo de software, 
+        pero actualmente estoy enfocado en profundizar mis conocimientos en el desarrollo de aplicaciones de escritorio y móviles. Mi objetivo es crear 
+        aplicaciones que sean no solo funcionales, sino también útiles y necesarias para los usuarios. Estoy constantemente aprendiendo y buscando nuevas 
+        oportunidades para mejorar y ampliar mis habilidades en este campo en constante evolución.</div>
+    <div class="contenedor">
+        <button id="botonizquierda" class="boton" onclick="abrirSeccion('skills')">Skills</button>
+        <button id="botonderecha" class="boton" onclick="abrirSeccion('proyectos')">Proyectos</button>
+    </div>
+    <div id="contenedorsecciones">
+        <div class="seccion" id="skills">
+            <button class="botoncerrar" onclick="cerrarSeccion('skills')" id="botoncerrarizquierda"></button>
+            <h2 id="skillstxt">Skills</h2>
+        </div>
+        <div class="seccion" id="proyectos">
+            <button class="botoncerrar" onclick="cerrarSeccion('proyectos')" id="botoncerrarderecha"></button>
+            <h2>Proyectos</h2>
+        </div>
+    </div>
 </body>
 </html>

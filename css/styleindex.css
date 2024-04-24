@@ -17,14 +17,14 @@ body{
     #avatargif{
         left: 10vw;
         top: 34vh;
-        width: 25vw;
+        width: 35vw;
         height: 25vh;
     }
     #ordenador{
-        left: 35vw;
-        top: 33vh;
-        width: 25vw;
-        height: 30vh;
+        left: 48vw;
+        top: 39.3vh;
+        width: 19vw;
+        height: 15vh;
     }
     #chat{
         top: 20vh;
@@ -46,10 +46,15 @@ body{
         margin-bottom: 1px;
     }
     #enlace {
-        width: 34px;
-        height: 52px;
-        top: 40vh;
-        left: 43.5vw;
+        width: 20px;
+        height: 30px;
+        top: 42.5vh;
+        left: 53.9vw;
+    }
+    #mesa {
+        top: 45vh;
+        left: 35vw;
+        width: 150px;
     }
 }
 @media screen and (min-width:768px) {
@@ -60,10 +65,10 @@ body{
         height: 40vh;
     }
     #ordenador{
-        left: 40vw;
-        top: 33vh;
-        width: 25vw;
-        height: 45vh;
+        left: 50vw;
+        top: 35vh;
+        width: 20vw;
+        height: 25vh;
     }
     #chat{
         top: 15vh;
@@ -85,10 +90,15 @@ body{
         margin-bottom: 1px;
     }
     #enlace {
-        width: 60px;
-        height: 80px;
-        top: 43.3vh;
-        left: 48.5vw;
+        width: 50px;
+        height: 50px;
+        top: 40vh;
+        left: 56.8vw;
+    }
+    #mesa {
+        top: 43vh;
+        left: 43vw;
+        width: 300px;
     }
 }
 @media screen and (min-width:1024px) {
@@ -99,10 +109,10 @@ body{
         height: 40vh;
     }
     #ordenador{
-        left: 40vw;
-        top: 33vh;
-        width: 25vw;
-        height: 45vh;
+        left: 46vw;
+        top: 33.5vh;
+        width: 20vw;
+        height: 27vh;
     }
     #chat{
         top: 15vh;
@@ -124,10 +134,15 @@ body{
         margin-bottom: 1px;
     }
     #enlace {
-        width: 80px;
-        height: 80px;
-        top: 43.3vh;
-        left: 48.5vw;
+        width: 60px;
+        height: 50px;
+        top: 39.5vh;
+        left: 52.7vw;
+    }
+    #mesa {
+        top: 43vh;
+        left: 40vw;
+        width: 300px;
     }
 }
 @media screen and (min-width:1440px) {
@@ -138,10 +153,10 @@ body{
         height: 40vh;
     }
     #ordenador{
-        left: 40vw;
-        top: 33vh;
-        width: 25vw;
-        height: 45vh;
+        left: 45vw;
+        top: 30vh;
+        width: 15vw;
+        height: 27vh;
     }
     #chat{
         top: 14vh;
@@ -162,10 +177,15 @@ body{
         margin-bottom: 1px;
     }
     #enlace {
-        width: 106px;
-        height: 80px;
-        top: 43.3vh;
-        left: 48.5vw;
+        width: 70px;
+        height: 65px;
+        top: 35vh;
+        left: 50vw;
+    }
+    #mesa {
+        top: 37vh;
+        left: 40vw;
+        width: 375px;
     }
 }
 @media screen and (min-width:1600px) {
@@ -176,10 +196,10 @@ body{
         height: 40vh;
     }
     #ordenador{
-        left: 40vw;
+        left: 45vw;
         top: 33vh;
-        width: 25vw;
-        height: 45vh;
+        width: 15vw;
+        height: 25vh;
     }
     #chat{
         top: 15vh;
@@ -201,21 +221,31 @@ body{
         margin-bottom: 1px;
     }
     #enlace {
-        width: 140px;
-        height: 85px;
-        top: 43.3vh;
-        left: 48.5vw;
+        width: 93px;
+        height: 65px;
+        top: 38vh;
+        left: 50vw;
     }
+    #mesa {
+        top: 40vh;
+        left: 40vw;
+        width: 375px;
+    }
+}
+#mesa {
+    position: absolute;
 }
 #avatargif {
     position:absolute;
 }
 #ordenador {
     position:absolute;
+    z-index: 1;
 }
 #enlace {
     position: absolute;
     background-color: black;
+    z-index: 2;
 }
 #chat {
     position:absolute;
