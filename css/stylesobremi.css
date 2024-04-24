@@ -62,7 +62,7 @@ body {
     border-right: 1px solid black;
 }
 .botoncerrar{
-    background-image: url(/img/cruzpixel.png);
+    background-image: url(../img/cruzpixel.png);
     width: 30px;
     height: 30px;
     background-size: cover;
@@ -86,7 +86,7 @@ body {
     margin-top: 1.5vh;
 }
 #botonderecha{
-    background-image: url(/img/flecha.png);
+    background-image: url(../img/flecha.png);
     background-size: cover;
     background-color: transparent;
     background-position: center;
@@ -98,7 +98,7 @@ body {
     font-size: 20px;
 }
 #botonizquierda{
-    background-image: url(/img/flechaizquierda.png);
+    background-image: url(../img/flechaizquierda.png);
     background-size: cover;
     background-color: transparent;
     background-position: center;
