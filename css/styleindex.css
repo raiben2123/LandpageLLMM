@@ -1,6 +1,6 @@
 @font-face {
     font-family: pixel;
-    src: url(font/upheavtt.ttf);
+    src: url(../font/upheavtt.ttf);
 }
 body{
     overflow-y: hidden;
