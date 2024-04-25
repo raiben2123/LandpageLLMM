@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="css/stylesobremi.css">
     <link rel="shortcut icon" href="img/avatar.png" type="image/x-icon">
     <script src="script.js"></script>
-    <!-- Falta link a javascript -->
     <title>Landing Page</title>
 </head>
 <body>
     <header>
-        <div id="nombre">Rubén Martínez Marín</div>
+        <div id="nombre">
+            <img src="../img/logo.png" alt="" id="logo">
+            <p>Rubén Martínez Marín</p>
+        </div>
         <nav id="navegador">
             <ul>
                 <li><a href="">Sobre mi</a></li>
@@ -23,29 +25,58 @@
     </header>
     <div id="fondito"></div>
     <div id="personajito"><img src="/img/avatar.png" alt=""></div>
-    <div>
-        Rubén Martínez Marín
-    </div>
-    <div>¡Hola! Soy un estudiante de 21 años apasionado por el desarrollo de aplicaciones. Te invito a explorar mi portafolio y 
+    <div id="primertexto">¡Hola! Soy un estudiante de 21 años apasionado por el desarrollo de aplicaciones. Te invito a explorar mi portafolio y 
         descubrir los proyectos en los que he trabajado. ¡Espero que lo disfrutes!</div>
+        <div class="contenedor">
+            <button id="botonizquierda" class="boton" onclick="abrirSeccion('skills')">Skills</button>
+            <button id="botonderecha" class="boton" onclick="abrirSeccion('proyectos')">Proyectos</button>
+        </div>
+    <div id="sobremi">
     <div><h2>Sobre mi</h2></div>
-    <div>Soy un estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM). Desde que era pequeño, me apasiona la informática y he estado explorando 
+    <div>Soy un estudiante de Desarrollo de Aplicaciones Multiplataforma ( DAM ). Desde que era pequeño, me apasiona la informática y he estado explorando 
         este fascinante mundo de manera autodidacta. A lo largo de mi trayectoria, he adquirido habilidades en diversas áreas del desarrollo de software, 
         pero actualmente estoy enfocado en profundizar mis conocimientos en el desarrollo de aplicaciones de escritorio y móviles. Mi objetivo es crear 
         aplicaciones que sean no solo funcionales, sino también útiles y necesarias para los usuarios. Estoy constantemente aprendiendo y buscando nuevas 
         oportunidades para mejorar y ampliar mis habilidades en este campo en constante evolución.</div>
-    <div class="contenedor">
-        <button id="botonizquierda" class="boton" onclick="abrirSeccion('skills')">Skills</button>
-        <button id="botonderecha" class="boton" onclick="abrirSeccion('proyectos')">Proyectos</button>
     </div>
     <div id="contenedorsecciones">
         <div class="seccion" id="skills">
-            <button class="botoncerrar" onclick="cerrarSeccion('skills')" id="botoncerrarizquierda"></button>
-            <h2 id="skillstxt">Skills</h2>
+            <div id="headerskills">
+                <button class="botoncerrar" onclick="cerrarSeccion('skills')" id="botoncerrarizquierda"></button>
+                <h2 id="skillstxt">Skills</h2>
+            </div>
+            <div id="contenidoskills">
+                <div id="html" class="skill">
+                    <p>HTML</p>
+                    <div class="containerskill">
+                        <div class="skillshtml">85%</div>
+                    </div>
+                </div>
+                <div id="css" class="skill">
+                    <p>CSS</p>
+                    <div class="containerskill">
+                        <div class="skillscss">75%</div>
+                    </div>
+                </div>
+                <div id="java" class="skill">
+                    <p>JAVA</p>
+                    <div class="containerskill">
+                        <div class="skillsjava">65%</div>
+                    </div>
+                </div>
+                <div id="python" class="skill">
+                    <p>PYTHON</p>
+                    <div class="containerskill">
+                        <div class="skillspython">35%</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="seccion" id="proyectos">
-            <button class="botoncerrar" onclick="cerrarSeccion('proyectos')" id="botoncerrarderecha"></button>
-            <h2>Proyectos</h2>
+            <div id="headerproyectos">
+                <button class="botoncerrar" onclick="cerrarSeccion('proyectos')" id="botoncerrarderecha"></button>
+                <h2>Proyectos</h2>
+            </div>
         </div>
     </div>
 </body>
