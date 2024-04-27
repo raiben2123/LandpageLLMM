@@ -10,3 +10,18 @@ function cerrarSeccion(seccion) {
     let botonescerrar = document.querySelectorAll('.botoncerrar')
     document.getElementById(seccion).classList.remove('abierto')
 }
+function manejarEnlaces(){
+    document.querySelectorAll('#navegador a').forEach(enlace => {
+        enlace.addEventListener('click', function(event){
+            // event.preventDefault();
+
+            let seccion = this.getAttribute('data-seccion');
+
+            abrirSeccion(seccion);
+        })
+    })
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    manejarEnlaces();
+});

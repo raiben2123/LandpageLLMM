@@ -3,7 +3,7 @@
     src: url(../font/upheavtt.ttf);
 }
 body {
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     overflow-x: hidden;
     width: 100%;
     height: 1000px;
@@ -75,13 +75,27 @@ body {
     position: relative;
     cursor: pointer;
 }
+#proyectos.abierto .botoncerrar{
+    background-image: url(../img/cruzpixel.png);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+}
 .boton:hover{
     scale: 1.05;
 }
 #botoncerrarizquierda{
     order: 2;
-    margin-left: auto;
     margin-right: 1vw;
+    margin-top: 1.5vh;
+    padding: 0;
+}
+#botoncerrarderecha{
+    margin-left: 1vw;
     margin-top: 1.5vh;
     padding: 0;
 }
@@ -136,7 +150,6 @@ body {
 #navegador ul li a:hover {
     color: blue;
 }
-
 #fondito{
     background-image: url(../img/fondobonito.png);
     width: 40%;
@@ -235,3 +248,56 @@ header{
     width: 25%;
     background-color: darkorange;
 }
+#headerproyectos{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-items: center;
+}
+#headerproyectos h2{
+    order: 2;
+    margin: auto;
+}
+#containerproyectos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    margin: 0 2%;
+}
+.proyectos{
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.proyectos img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+.proyectos a{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+.proyectos:hover .contenidoimagen{
+    transform: translateY(0%);
+}
+.contenidoimagen{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(221, 221, 221, 0.63);
+    transform: translateY(100%);
+    transition: 0.4s ease;
+}
+
