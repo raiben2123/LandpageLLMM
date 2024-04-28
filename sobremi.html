@@ -19,7 +19,7 @@
                 <li><a href="#sobremi">Sobre mi</a></li>
                 <li><a href="#proyectos" data-seccion="proyectos">Proyectos</a></li>
                 <li><a href="#skills" data-seccion="skills">Skills</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#containercontactame">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -84,7 +84,7 @@
                         <h2>Proyecto 1</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <a href="">Ir al GitHub</a>
+                    <a href="">Ver codigo</a>
                 </div>
                 <div class="proyectos">
                     <img src="./img/Project-2.png" alt="">
@@ -92,7 +92,7 @@
                         <h2>Proyecto 1</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <a href="">Ir al GitHub</a>
+                    <a href="">Ver codigo</a>
                 </div>
                 <div class="proyectos">
                     <img src="./img/Project-2.png" alt="">
@@ -100,10 +100,24 @@
                         <h2>Proyecto 1</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <a href="">Ir al GitHub</a>
+                    <a href="">Ver codigo</a>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="containercontactame">
+        <h2>Contactame</h2>
+        <form id="contactForm" action="mailto:rubenmrtnz02@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombreformulario" name="nombre" required>
+            
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asuntoformulario" name="asunto" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensajeformulario" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit" class="buttonformulario">Enviar</button>
     </div>
 </body>
 </html>
